@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: my-todoui-pod
+  labels:
+    app: my-todoui
+    environment: development
+spec:
+  containers: 
+  - name: my-todoui-container
+    image: devopsinsiders/todoapp-ui-new:v2
+    ports:
+    - containerPort: 80
